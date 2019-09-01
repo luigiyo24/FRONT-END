@@ -1,0 +1,13 @@
+body{
+    background: var(--bg-color);    
+    color: var(--text-color);
+    font-family: var(--font);
+}
+
+h1{
+    background: var(--bg-color-2);
+}
+
+a{
+    color: var(--accent-color);
+}
