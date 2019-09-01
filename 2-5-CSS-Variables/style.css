@@ -51,3 +51,12 @@ h2{
         --column-size: 33.33%;
     }
 }
+
+:root{
+    --colors: yellow;
+    --colors-text: green;
+}
+
+h3{
+    color: var(--colors-text);
+}
