@@ -1,11 +1,11 @@
 :root{
     --color:red;
     --link-color:green;
-    --bg-color: rgba(0,0,0,0.5);
+    /* --bg-color: rgba(196, 147, 147, 0.5); */
 }
 
 body{
-    background-color: var(--bg-color, blue);
+    /* background-color: var(--bg-color, blue); */
 }
 
 p{
@@ -59,4 +59,23 @@ h2{
 
 h3{
     color: var(--colors-text);
+}
+
+:root {
+    --bar-color: red;
+    --width: 0;
+}
+
+body::before{
+    content: '';
+    display: block;
+    height: 5px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: var(--bar-color);
+
+    /*magic*/
+    width: calc(var(--width) *1vw);
+
 }
