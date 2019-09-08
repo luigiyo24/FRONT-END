@@ -1,0 +1,56 @@
+*{
+    box-sizing: border-box;
+}
+
+/* reset ELEMENTS */
+
+.menu{
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.menu__link{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* Layout basico */
+
+.menu{
+    width: 50%;
+    background: #333;
+}
+
+.menu__item{
+    border-bottom: 1px solid #222;
+}
+
+.menu__item:hover{
+    background: rgba(0, 0, 0, .5);
+}
+
+.menu__link{
+    display: block;
+    padding: .75em 1em;
+}
+
+/* Agregar flexbox */
+@media screen and (min-width: 960px){
+    .menu{
+        display: flex;
+        width: 100%;
+    }
+
+    .menu__item{
+        flex: 1;
+        border-bottom: 1px solid #000; 
+        border-right: 1px solid #222;
+    }
+
+    .menu__link{
+        text-align: center;
+    }
+}
+
