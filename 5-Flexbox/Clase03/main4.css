@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+header{
+    background: aqua;
+    padding: 1em;
+}
+
+main{
+    background: darkgoldenrod;
+    flex: 1;
+}
+
+aside{
+    background: darkturquoise;
+    width: 25%;
+    order: -1;
+}
+
+footer{
+    background: goldenrod;
+    padding: 1em;
+}
+
+.content{
+    display: flex;
+    flex: 1;
+}
