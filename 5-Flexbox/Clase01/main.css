@@ -1,0 +1,33 @@
+body{
+    font-size: 1.5rem;
+}
+.flex-container{
+    display: flex;
+    background: yellow;
+    border: 1px solid #000;
+}
+
+.row-direction{
+    flex-direction: row-reverse;
+}
+
+.column-direction{
+    flex-direction: column-reverse; 
+}
+
+.flex-item{
+    border: 1px solid #000;
+    background: blue;
+    margin: 1rem;
+    height: 100px;
+    width: 200px;
+}
+
+.wrap-content{
+    flex-wrap: wrap-reverse;
+}
+
+.flex-flow{
+    flex-flow: wrap-reverse row-reverse;
+    justify-content: center;
+}
